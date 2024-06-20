@@ -3,4 +3,4 @@
 自分を便利にするデータパック
 
 ## 対応データパック
-    [PrisonDataPack](https://github.com/Avuorina/Prison)
+[PrisonDatapack](https://github.com/Avuorina/Prison)
