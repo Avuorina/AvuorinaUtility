@@ -16,3 +16,6 @@
                 scoreboard objectives add AVOSneakFrequency dummy "スニーク頻度"
             # _ - 汎用スコアボード
                 scoreboard objectives add _ dummy "汎用スコアボード"
+
+## ロード完了
+    tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":"RELOAD"}]
