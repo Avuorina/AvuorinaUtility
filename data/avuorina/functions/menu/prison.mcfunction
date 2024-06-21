@@ -24,6 +24,13 @@
     # ロックドア  カギ
         execute if entity @s[team=DEBUGer] run \
         tellraw @s [{"text": "[","color": "yellow"},{"text": " ■ ","color": "white","clickEvent":{"action":"run_command","value":"/trigger AVOMenu set 4"}},{"text": "ロックドア","color": "white","bold": true},{"text": "]","color": "yellow","bold": false},{"text": "  "},{"text": "["},{"text": " ■ ","color": "white","clickEvent":{"action":"run_command","value":"/trigger AVOMenu set 5"}},{"text": "カギ","color": "white","bold": true},{"text": "]","color": "yellow","bold": false}]
+    # スコアを表示
+        # ON
+            execute if entity @s[team=DEBUGer,tag=!AVOShowScorer] run \
+            tellraw @s [{"text": "[","color": "red"},{"text": " ■ ","color": "white","clickEvent":{"action":"run_command","value":"/trigger AVOMenu set 11"}},{"text": "スコア表示","color": "white","bold": true},{"text": "]","color": "red","bold": false}]
+        # OFF
+            execute if entity @s[team=DEBUGer,tag=AVOShowScorer] run \
+            tellraw @s [{"text": "[","color": "green"},{"text": " ■ ","color": "white","clickEvent":{"action":"run_command","value":"/trigger AVOMenu set 12"}},{"text": "スコア表示","color": "white","bold": true},{"text": "]","color": "green","bold": false}]
 # 
     tellraw @s {"text": "\n"}
 # =======================
