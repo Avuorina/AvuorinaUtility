@@ -4,6 +4,10 @@
 #
 #
 
+## OFF
+    execute if score @a[sort=nearest,limit=1] AVOMenu matches 12 run kill @e[type=armor_stand,tag=AVOShowScoreBase]
+    execute if score @a[sort=nearest,limit=1] AVOMenu matches 12 run tag @a remove AVOShowScorer
+    execute if score @a[sort=nearest,limit=1] AVOMenu matches 12 run kill @e[type=text_display,tag=AVOShowScore]
 ## _
     data merge entity @s[tag=_] {text:'{"score":{"name":"_","objective":"_"},"bold":true}'}
 ## SneakTimer
@@ -18,7 +22,3 @@
     data merge entity @s[tag=Direction] {text:'{"bold":true,"score":{"name":"@a[sort=nearest,limit=1]","objective":"Direction"}}'}
 ## InventoryCount
     data merge entity @s[tag=InventoryCount] {text:'{"bold":true,"score":{"name":"@a[sort=nearest,limit=1]","objective":"InventoryCount"}}'}
-
-## いないぞ対象が。
-    kill @e[type=armor_stand,tag=AVOShowScoreBase]
-    tag @a remove AVOShowScorer

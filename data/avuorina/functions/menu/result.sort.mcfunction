@@ -30,7 +30,7 @@
 
 ## [スコア表示] (11),(12)
     execute if score @s AVOMenu matches 11 facing entity @s eyes at @s positioned ^ ^1 ^3 rotated ~180 0 run function avuorina:menu/common/show_score
-    execute if score @s AVOMenu matches 12 run kill @e[type=text_display,tag=AVOShowScore]
+    execute if score @s AVOMenu matches 12 as @e[type=text_display,tag=AVOShowScore] at @s run function avuorina:menu/common/update_score
 
 ## もう一回見せる用
     # PRISON
