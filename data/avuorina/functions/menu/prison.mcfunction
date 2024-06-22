@@ -37,9 +37,3 @@
     tellraw @s [{"text": "================","bold": true,"color": "white"}]
 
 
-
-## もう一回
-#
-
-#gamerule reducedDebugInfo false
-#schedule function 

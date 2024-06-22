@@ -29,7 +29,7 @@
     execute if score @s AVOMenu matches 10 run effect clear @s saturation
 
 ## [スコア表示] (11),(12)
-    execute if score @s AVOMenu matches 11 at @s facing entity @s eyes positioned ^3 ^ ^ run function avuorina:menu/common/show_score
+    execute if score @s AVOMenu matches 11 facing entity @s eyes at @s positioned ^ ^1 ^3 rotated ~180 0 run function avuorina:menu/common/show_score
     execute if score @s AVOMenu matches 12 run tag @s remove AVOShowScorer
 
 ## もう一回見せる用
