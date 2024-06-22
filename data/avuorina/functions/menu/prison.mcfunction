@@ -34,6 +34,6 @@
 # 
     tellraw @s {"text": "\n"}
 # =======================
-    tellraw @s [{"text": "================","bold": true,"color": "white"}]
+    tellraw @s [{"text": "=====================","bold": true,"color": "white"}]
 
 

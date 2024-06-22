@@ -18,3 +18,7 @@
     data merge entity @s[tag=Direction] {text:'{"bold":true,"score":{"name":"@a[sort=nearest,limit=1]","objective":"Direction"}}'}
 ## InventoryCount
     data merge entity @s[tag=InventoryCount] {text:'{"bold":true,"score":{"name":"@a[sort=nearest,limit=1]","objective":"InventoryCount"}}'}
+
+## いないぞ対象が。
+    kill @e[type=armor_stand,tag=AVOShowScoreBase]
+    tag @a remove AVOShowScorer
