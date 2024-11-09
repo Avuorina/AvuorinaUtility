@@ -21,6 +21,11 @@
                 scoreboard objectives add _ dummy "汎用スコアボード"
             # MenuTab
                 scoreboard objectives add AVOMenuTab dummy "メニュータブ"
+    
+    ## 汎用チーム
+
+        ## DEBUGer
+            team add DEBUGer {"text": "デバッグする者"}
 
 ## ロード完了
     tellraw @a [{"color":"dark_gray","text":"\n>"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":"RELOAD"}]
